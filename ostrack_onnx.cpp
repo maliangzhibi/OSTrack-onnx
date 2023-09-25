@@ -368,9 +368,9 @@ OSTrack::OSTrack(const std::string &_onnx_path, unsigned int _num_threads) :
   session_options.SetLogSeverityLevel(4);
   // 1. session
   // GPU Compatibility.
-// #ifdef USE_CUDA
+#ifdef USE_CUDA
   OrtSessionOptionsAppendExecutionProvider_CUDA(session_options, 0); // C API stable.
-// #endif
+#endif
   ort_session = new Ort::Session(ort_env, onnx_path, session_options);
   // Generate hann2d window.
   this->cfg.window = hann(this->cfg.feat_sz);
