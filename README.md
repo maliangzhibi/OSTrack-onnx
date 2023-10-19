@@ -5,6 +5,7 @@ The official implementation by pytorch:
 https://github.com/botaoye/OSTrack
 
 # 0. Download model
+[onnx_file](https://www.123pan.com/s/6iArVv-kUAJ.html)
 
 # 1. How to build and run it?
 
